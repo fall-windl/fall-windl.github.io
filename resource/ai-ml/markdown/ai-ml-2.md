@@ -1,0 +1,58 @@
+```python
+# 如果出现有编译不过的情况，请按顺序对每题的代码进行编译。
+
+# (1)
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+data = pd.read_csv('percent-bachelors-degrees-women-usa.csv')
+keys = data.columns.tolist()
+percents = data.to_numpy().T
+plt.plot(percents[0][:21], percents[1][:21])
+plt.xlabel('Year')
+plt.ylabel('Percentage')
+plt.title('Agriculture')
+plt.xticks(np.arange(1970, 1991, 2))
+plt.show()
+```
+
+<img src="/assets/img/ai-ml/2-1.png" width="30%">
+
+```python
+# (2)
+fig = plt.figure(figsize = (8, 10))
+list = [2, 3, 4, 5, 7, 8]
+for i in range(6):
+    ax = fig.add_subplot(3, 2, i + 1)
+    ax.plot(percents[0][:21], percents[list[i]][:21])
+    ax.set(xlabel = 'Year', ylabel = 'Percentage', title = keys[list[i]])
+fig.tight_layout()
+plt.show()
+```
+
+<img src="/assets/img/ai-ml/2-2.png" width="60%">
+
+```python
+# (3)
+for i in range(6):
+    plt.plot(percents[0][:21], percents[list[i]][:21], label = keys[list[i]])
+plt.xlabel('Year')
+plt.ylabel('Percentage')
+plt.title('Percent of Bachelor Degrees')
+plt.xticks(np.arange(1970, 1991, 2))
+plt.legend()
+plt.show()
+```
+
+<img src="/assets/img/ai-ml/2-3.png" width="30%">
+
+```python
+# (4)
+plt.bar(keys[1:], percents.T[41][1:])
+plt.xticks(rotation = 90)
+plt.ylabel('Percentage')
+plt.title('Percent of Bachelor Degrees in 2011')
+plt.show()
+```
+
+<img src="/assets/img/ai-ml/2-4.png" width="30%">

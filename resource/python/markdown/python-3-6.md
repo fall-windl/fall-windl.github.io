@@ -1,0 +1,67 @@
+$$第\;1\;关：倒数之和$$
+
+---
+
+```python
+n = eval(input("请输入一个正整数："))
+sum = 0
+for i in range(1, n + 1):
+    sum += 1 / i
+print(f"{sum:.6f}")
+```
+
+---
+
+$$第\;2\;关：能被\;3\;或\;5\;整除的数$$
+
+---
+
+```python
+n = eval(input())
+cnt = 0
+for i in range(1, n + 1):
+    if i % 3 == 0 or i % 5 == 0:
+        print(i, end = '\t')
+        cnt += 1
+        if cnt and cnt % 5 == 0:
+            print()
+if cnt % 5:
+    print()
+print(f"共计{cnt}个")
+```
+
+---
+
+$$第\;3\;关：素数判断$$
+
+---
+
+```python
+def is_prime(num: int) -> bool:
+    i = 2
+    while i * i <= num:
+        if num % i == 0:
+            return False
+        i += 1
+    return True
+
+n = eval(input("请输入一个正整数："))
+print("{0}{1}素数！".format(n, "是" if is_prime(n) else "不是"))
+```
+
+---
+
+$$第\;4\;关：判断完数$$
+
+---
+
+```python
+def check(num: int) -> bool:
+    sum = 0
+    for i in range(1, num):
+        sum += i * (num % i == 0)
+    return sum == num
+
+n = eval(input())
+print("{0}{1}完数。".format(n, "是" if check(n) else "不是"))
+```

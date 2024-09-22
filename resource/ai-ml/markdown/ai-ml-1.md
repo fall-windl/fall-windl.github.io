@@ -1,0 +1,22 @@
+```python
+import numpy as np
+
+A = [[1,6,3,5], [3,6,4,1], [8,4,5,6], [3,2,5,1]]
+A = np.array(A)
+
+print("转置矩阵：\n{0}\n".format(A.T))
+print("逆矩阵：\n{0}\n".format(np.linalg.inv(A)))
+print("矩阵行列式的值：\n{0}\n".format(np.linalg.det(A)))
+
+B = [[9,8,7,6], [3,4,6,1], [1,1,1,1], [2,3,4,5]]
+B = np.array(B)
+
+print("A对应位置的项是否比B小?\n{0}\n".format(A < B))
+print("A * B =\n{0}\n".format(A * B))
+print("B * 5 + A * 3 =\n{0}\n".format(B * 5 + A * 3))
+
+C = np.diag([1, 2, 3, 4])
+print("C .* A =\n{0}\n".format(np.dot(C, A)))
+```
+
+<img src="/assets/img/ai-ml/1-1.png" width="30%">

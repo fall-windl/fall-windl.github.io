@@ -1,0 +1,70 @@
+$$第\;1\;关：奇偶性判断$$
+
+---
+
+```python
+x = int(input())
+print("{0}是{1}".format(x, "奇数" if x & 1 else "偶数"))
+```
+
+---
+
+$$第\;2\;关：计算分段函数值$$
+
+---
+
+```python
+import math
+
+x = eval(input("请输入x的值："))
+f = 0
+if x < 0:
+    f = -x * math.sin(math.radians(30))
+else:
+    f = math.sqrt(x * x + math.cos(math.radians(30))) / 5.0
+print(f"函数fx={f:.1f}")
+```
+
+---
+
+$$第\;3\;关：计算\;\rm{BMI}\;值$$
+
+---
+
+```python
+w = eval(input("请输入您的体重（kg）："))
+h = eval(input("请输入您的身高（m）："))
+bmi = w / (h * h)
+if bmi < 18.5:
+    print("偏瘦")
+elif bmi < 25:
+    print("正常")
+elif bmi < 28:
+    print("偏胖")
+elif bmi < 32:
+    print("肥胖")
+else:
+    print("严重肥胖")
+```
+
+---
+
+$$第\;4\;关：计算三角形面积$$
+
+---
+
+```python
+import math
+
+a = eval(input("请输入实数a："))
+b = eval(input("请输入实数b："))
+c = eval(input("请输入实数c："))
+if a <= 0 or b <= 0 or c <= 0:
+    print("有负数，不能构成三角形！")
+elif not(a + b > c and a + c > b and b + c > a):
+    print(f"{a}、{b}、{c}不能构成三角形！")
+else:
+    s = (a + b + c) / 2
+    area = math.sqrt(s * (s-a) * (s-b) * (s-c))
+    print(f"三角形面积为：{area:.2f}")
+```

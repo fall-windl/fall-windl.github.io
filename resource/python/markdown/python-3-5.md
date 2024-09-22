@@ -1,0 +1,57 @@
+$$第\;1\;关：输出水仙花数$$
+
+---
+
+```python
+for i in range(100, 1000):
+    a = i % 10
+    b = i // 10 % 10
+    c = i // 100
+    if i == a ** 3 + b ** 3 + c ** 3:
+        print(i, end = ' ')
+```
+
+---
+
+$$第\;2\;关：计算偶数之和$$
+
+---
+
+```python
+n = eval(input("请输入正整数："))
+sum = 0
+for i in range(2, n + 1, 2):
+    sum += i
+print(f"{n}以内所有偶数之和为：{sum}")
+```
+
+---
+
+$$第\;3\;关：计算和及平方和$$
+
+---
+
+```python
+n = eval(input("请输入正整数："))
+s1 = 0
+s2 = 0
+for i in range(1, n + 1):
+    s1 += i
+    s2 += i * i
+print(f"s1={s1} s2={s2}")
+```
+
+---
+
+$$第\;4\;关：计算奇数阶乘和$$
+
+---
+
+```python
+import math
+n = eval(input("请输入正整数："))
+sum = 0
+for i in range(1, n + 1, 2):
+    sum += math.factorial(i)
+print(f"{n}以内所有奇数阶乘之和为：{sum}。")
+```

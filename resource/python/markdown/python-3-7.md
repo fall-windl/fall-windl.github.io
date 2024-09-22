@@ -1,0 +1,73 @@
+$$第\;1\;关：输出素数$$
+
+---
+
+```python
+def isprime(num: int) -> bool:
+    i = 2
+    while i * i <= num:
+        if num % i == 0:
+            return False
+        i += 1
+    return True
+
+cnt = 0
+for i in range(100, 201):
+    if isprime(i):
+        print(i, end = '\t')
+        cnt += 1
+        if cnt and cnt % 5 == 0:
+            print()
+print()
+print(f"num={cnt}")
+```
+
+---
+
+$$第\;2\;关：九九乘法表$$
+
+---
+
+```python
+for i in range(1, 10):
+    for j in range(1, i + 1):
+        print(f"{i}*{j}={i*j}", end = '\t')
+    print()
+```
+
+---
+
+$$第\;3\;关：百马百担问题$$
+
+---
+
+```python
+for i in range(0, 101):
+    for j in range(0, 101):
+        k = 100 - i - j
+        if i * 3 + j * 2 + k / 2 == 100:
+            print(f"大马{i}匹，中马{j}匹，小马{k}匹")
+```
+
+---
+
+$$第\;4\;关：斐波那契数列$$
+
+---
+
+```python
+n = eval(input())
+x = 1
+y = 1
+if n == 1:
+    print(1)
+else:
+    print("1\t1\t", end = '')
+    for i in range(3, n + 1):
+        z = x + y
+        print(z, end = '\t')
+        if i % 5 == 0:
+            print()
+        x = y
+        y = z
+```

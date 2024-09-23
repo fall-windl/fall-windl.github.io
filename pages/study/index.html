@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>学业</title>
-    <script src="/assets/js/global.js"></script>
+  <meta charset="UTF-8">
+  <title>学业</title>
+  <script src="/assets/js/global.js"></script>
 </head>
 <body>
 <!-- header -->
-<script src="/assets/js/header.js"></script>
+<script>header()</script>
 <!-- /header -->
 
-<!-- main-->
+<!-- main -->
 <div class="main">
-    <div class="card">
-        <div class="card-body text-indent">
-            这里是学业版块。欢迎学习与交流。请尽可能<b>不要直接复制粘贴</b>。
-        </div>
+  <div class="card">
+    <div class="card-body text-indent">
+      这里是学业版块。欢迎学习与交流。请尽可能<b>不要直接复制粘贴</b>。
     </div>
+  </div>
 
-    <div class="card course">
-        <div class="card-header">
-            课程
-        </div>
-        <div class="card-body">
-            <div class="card card-body">
-                <a href="/pages/study/java-web">
-                    JavaWeb应用开发
-                </a>
-            </div>
-            <div class="card card-body">
-                <a href="/pages/study/front-end">
-                    Web前端开发技术
-                </a>
-            </div>
-            <div class="card card-body">
-                <a href="/pages/study/python">
-                    Python程序设计（已更新至《3 程序控制结构（选择与循环）》）
-                </a>
-            </div>
-            <div class="card card-body">
-                <a href="/pages/study/ai-ml">
-                    人工智能与机器学习（已更新至《作业2&ensp;Matplotlib》）
-                </a>
-            </div>
-        </div>
+  <table class="course">
+    <thead>
+    <tr>
+      <th>课程</th>
+      <th>更新至</th>
+      <th>最近修改时间</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/pages/study/java-web">JavaWeb应用开发</a></td>
+      <td>实验1 静态网页开发</td>
+      <td>
+        <div id="java-web-time"></div>
+        <script>lastModified("/pages/study/java-web/index.html", "java-web-time")</script>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/pages/study/front-end">Web前端开发技术</a></td>
+      <td>实验0 实验报告提交</td>
+      <td>
+        <div id="front-end-time"></div>
+        <script>lastModified("/pages/study/front-end/index.html", "front-end-time")</script>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/pages/study/python">Python程序设计</a></td>
+      <td>3 程序控制结构（选择与循环）</td>
+      <td>
+        <div id="python-time"></div>
+        <script>lastModified("/pages/study/python/index.html", "python-time")</script>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/pages/study/ai-ml">人工智能与机器学习</a></td>
+      <td>作业2&ensp;Matplotlib</td>
+      <td>
+        <div id="ai-ml-time"></div>
+        <script>lastModified("/pages/study/ai-ml/index.html", "ai-ml-time")</script>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="card">
+    <div class="card-header">
+      声明
     </div>
-
-    <div class="card">
-        <div class="card-header">
-            声明
-        </div>
-        <div class="card-body text-indent">
-            需要下载文件请访问<a href="//github.com/fall-windl/fall-windl.github.io"><b>此处</b></a>。
-            有什么没有提到的问题也可以私信我补充。
-        </div>
+    <div class="card-body text-indent">
+      需要下载文件请访问<a href="//github.com/fall-windl/fall-windl.github.io"><b>此处</b></a>。
+      有什么没有提到的问题也可以私信我补充。
     </div>
+  </div>
 </div>
 <!-- /main -->
 
 <!-- footer -->
-<script src="/assets/js/footer.js"></script>
+<script>header()</script>
 <!-- /footer -->
 </body>
 </html>

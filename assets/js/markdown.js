@@ -1,5 +1,5 @@
-function markdown(name, id) {
-    const markdownUrl = name;
+function markdown(url, id) {
+    const markdownUrl = url;
     const markdownContentDiv = document.getElementById(id);
     fetch(markdownUrl)
         .then(response => response.text())

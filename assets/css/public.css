@@ -40,39 +40,6 @@ nav.nav ul li:hover{
 nav.nav ul li a:hover {
     color: #fff;
 }
-
 a.nav-link {
     color: #333;
-}
-
-.main {
-    max-width: 1110px;;
-    margin:10px auto;
-}
-.card {
-    margin: 10px auto;
-}
-.text-indent {
-    text-indent: 2em;
-}
-.card-body a:hover {
-    color: #398dd3;
-}
-.course .card-body:has(> a:hover){
-    background: #eee;
-}
-
-details summary {
-    list-style:none;
-}
-details summary:hover {
-    color: #89b5da;
-}
-details .card-body:has(> [id]) {
-    border: #333 solid 2px;
-}
-pre:has(> code) {
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 8px;
 }

@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>人工智能与机器学习</title>
-    <script src="/assets/js/global.js"></script>
+  <meta charset="UTF-8">
+  <title>人工智能与机器学习</title>
+  <script src="/assets/js/global.js"></script>
 </head>
 <body>
 <!-- header -->
-<script src="/assets/js/header.js"></script>
+<script>header()</script>
 <!-- /header -->
 
-<!-- main-->
+<!-- main -->
 <div class="main">
-    <div class="card">
-        <div class="card-header">
-            作业
-        </div>
-
-        <div class="card-body">
-            <details>
-                <summary>作业2&ensp;Matplotlib</summary>
-                <div class="card card-body">
-                    <div id="ai-ml-2"></div>
-                    <script>markdown("/resource/ai-ml/markdown/ai-ml-2.md", "ai-ml-2");</script>
-                </div>
-            </details>
-            <hr/>
-            <details>
-                <summary>作业1&ensp;Numpy计算</summary>
-                <div class="card card-body">
-                    <div id="ai-ml-1"></div>
-                    <script>markdown("/resource/ai-ml/markdown/ai-ml-1.md", "ai-ml-1");</script>
-                </div>
-            </details>
-        </div>
+  <div class="card">
+    <div class="card-header">
+      作业
     </div>
 
-    <div class="card">
-        <div class="card-header">
-            关于注释
+    <div class="card-body">
+      <details>
+        <summary>作业2&ensp;Matplotlib</summary>
+        <div class="card card-body">
+          <div id="ai-ml-2"></div>
+          <script>markdown("/resource/ai-ml/markdown/ai-ml-2.md", "ai-ml-2");</script>
         </div>
-        <div class="card-body text-indent">
-            从第3次作业开始会补上注释的，<s>也可能不会</s>。
+      </details>
+      <hr/>
+      <details>
+        <summary>作业1&ensp;Numpy计算</summary>
+        <div class="card card-body">
+          <div id="ai-ml-1"></div>
+          <script>markdown("/resource/ai-ml/markdown/ai-ml-1.md", "ai-ml-1");</script>
         </div>
+      </details>
     </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      关于注释
+    </div>
+    <div class="card-body text-indent">
+      从第3次作业开始会补上注释的，<s>也可能不会</s>。
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      资源
+    </div>
+    <div class="card-body">
+      <a href="//www.anaconda.com/download/success">
+        Anaconda3-2024.06-1-Windows-x86_64.exe
+      </a>
+    </div>
+  </div>
 </div>
 <!-- /main -->
 
 <!-- footer -->
-<script src="/assets/js/footer.js"></script>
+<script>header()</script>
 <!-- /footer -->
 </body>
 </html>

@@ -1,0 +1,53 @@
+.main {
+    max-width: 1110px;;
+    margin:10px auto;
+}
+.card {
+    margin: 10px auto;
+}
+.text-indent {
+    text-indent: 2em;
+}
+
+.course {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+}
+.course a:hover {
+    color: #398dd3;
+}
+.course thead {
+    background-color: #eee;
+}
+.course tr:has(a:hover) {
+    background: #f8f8f8;
+}
+.course td,
+.course th {
+    padding: 14px;
+    border-bottom: 1px solid #ccc;
+}
+.course tr:last-child td{
+    border-bottom: 0;
+}
+.course td:not(:first-child) {
+    color: #0000007f;
+}
+
+details summary {
+    list-style:none;
+}
+details summary:hover {
+    color: #89b5da;
+}
+details .card-body:has(> [id]) {
+    border: #333 solid 2px;
+}
+pre:has(> code) {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+}

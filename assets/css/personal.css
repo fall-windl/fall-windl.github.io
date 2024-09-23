@@ -69,5 +69,10 @@ details summary:hover {
     color: #89b5da;
 }
 details .card-body:has(> [id]) {
-    background-color: #f8f8f8;
+    border: #333 solid 2px;
+}
+pre:has(> code) {
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
 }

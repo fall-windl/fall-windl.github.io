@@ -19,14 +19,20 @@
 .course a:hover {
     color: #398dd3;
 }
-.course thead {
-    background-color: #eee;
+.course thead th {
+    background: #eee;
+}
+.course thead th:first-child {
+    border-top-left-radius: 10px;
+}
+.course thead th:last-child {
+    border-top-right-radius: 10px;
 }
 .course tr:has(a:hover) {
     background: #f8f8f8;
 }
-.course td,
-.course th {
+.course th,
+.course td {
     padding: 14px;
     border-bottom: 1px solid #ccc;
 }

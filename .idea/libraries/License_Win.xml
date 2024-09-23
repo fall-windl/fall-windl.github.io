@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="License-Win">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/resource/java-web/download/License-Win.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -49,6 +49,9 @@ details summary {
 details summary:hover {
     color: #89b5da;
 }
+details summary::-webkit-details-marker {
+    display:none;
+}
 details .card-body:has(> [id]) {
     border: #333 solid 2px;
 }

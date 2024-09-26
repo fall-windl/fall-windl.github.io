@@ -39,9 +39,3 @@ $(3)$ 新建 Servlet 文件。
 &emsp;&emsp;JAVAEE TYPE: 不写 jakarta 其他随意。
 
 &emsp;&emsp;Class Name: 随意。
-
-**6 常见问题**
-
-$(1)$ 右键没有 Add Framework Support... 选项。
-
-&emsp;&emsp;选中根目录的情况下双击 Shift，搜索 Add Framework Support...，回车。

@@ -38,6 +38,8 @@
 }
 .course tr:last-child td{
     border-bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .course td:not(:first-child) {
     color: #0000007f;

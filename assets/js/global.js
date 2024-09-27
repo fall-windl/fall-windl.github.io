@@ -1,4 +1,4 @@
-document.writeln("<link rel=\'stylesheet\' href=\'/assets/css/bootstrap.css\'>")
+document.writeln("<link rel=\'stylesheet\' href=\'/assets/css/bootstrap.min.css\'>")
 document.writeln("<link rel=\'stylesheet\' href=\'/assets/css/public.css\'>");
 document.writeln("<link rel=\'stylesheet\' href=\'/assets/css/main.css\'>");
 

@@ -33,11 +33,9 @@ nav.nav {
     background: #b3cee5;
     color: #333;
 }
-nav.nav ul li:hover{
+nav.nav ul li a:hover{
     border-radius: 6px;
     background: #89b5da;
-}
-nav.nav ul li a:hover {
     color: #fff;
 }
 a.nav-link {
